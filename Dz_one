@@ -1,17 +1,28 @@
 
 import java.util.Scanner; 
-public class MyClass {
+public class Main {
     public static void main(String args[]) {
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Введите любое целыке числа от 1 до 4: ");
-    
+    System.out.print("Введите возраст: ");
     int num = scanner.nextInt();
-    for(int i =0; i<=4; i++) {
+    if (num>=0 && num<=10) {
+       System.out.println("ребенок"); 
+    }  else if (num>=11 && num<=17) {
+        System.out.println("подросток");
+    }else if(num>=18 && num<=30) {
+       System.out.println("взрослый"); 
+    }else if (num>=31 && num<=45) {
+        System.out.println("средних лет");
+    } else if (num>=45 && num<=65) {
+        System.out.println("преклонный возраст");
+    } else if (num>=66 && num<=80) {
+        System.out.println("старик");
+    } else if (num>81) {
+        System.out.println("долгожитель");
+    } else {
         
-        if(num<i) {
-            //num==i;
-            System.out.println(num);
-        }
+        System.out.println("такого не существует");
     }
     
   }
+}
