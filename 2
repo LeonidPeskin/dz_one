@@ -1,0 +1,31 @@
+public class Main {
+    public static void main(String args[]) {
+    // int money = 1000;
+    // int pizza = 230;
+    // int huba = 26;
+    // double sweets = 2.5;
+    
+    // int sumPizza = money/pizza;
+    // int sumHuba = (money-(sumPizza*pizza))/huba; 
+    // int sumHubaOst = sumHuba*huba;
+    // int sumPizzaOst = sumPizza*pizza;
+    // int current = money-(sumHubaOst+sumPizzaOst);
+    // int sweetsOst = (int) (current/2.5);
+    
+    
+    int money = 1000;
+    int pizza = money/230; // 4 шт
+    int balance = money%230; // 80руб.
+    int huba = balance/26; // 3шт
+    int balanceOfHuba = balance%26; // 2руб
+    int sweets = balanceOfHuba/balance; //0 шт
+    
+    System.out.println(pizza + " пиццы");
+    System.out.println(huba + " жвачки ");
+    System.out.println(sweets + " конфет");
+    System.out.println("Сдача с магазина: " + balanceOfHuba);
+    
+
+    }
+    
+  }
