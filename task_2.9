@@ -1,0 +1,19 @@
+/*
+Задание: Дан массив с числами. Проверьте, что в этом массиве есть число 5. Если есть - выведите 'да', а если нет - выведите 'нет'.
+*/
+
+public class Main {
+    public static void main(String[] args) {
+        
+        int[] numbs = {7, 6, 15, 5};
+        int searshFive = 0;
+            for (int i = 0; i<numbs.length; i++ ) 
+            if (numbs[i]==5) {
+               // searshFive = numbs[i];
+                System.out.println("да");
+            } else {
+                System.out.println("нет");
+            }
+        
+    }
+}
