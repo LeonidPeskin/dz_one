@@ -1,0 +1,30 @@
+/*
+Задание: Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд. Если есть - выведите 'да', а если нет - выведите 'нет'.
+*/
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+       // Scanner scanner = new Scanner(System.in);
+        //int array;
+        
+     //   int[] numbs = new int[5];
+        int num = 0;
+        int[] numbs = {6, 5, 5, 20, 10};
+        for (int i = 1; i<numbs.length; ++i) {
+           
+           // array = scanner.nextInt();
+            if (numbs[i]==numbs[i-1]) {
+            //    numbs[i]=i;
+                System.out.println("да");
+            } 
+            else {
+               // System.out.println("нет");
+            }
+            
+        }
+        System.out.println("нет");
+       
+        
+    }
+}
